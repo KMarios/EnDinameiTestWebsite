@@ -1,0 +1,16 @@
+/* Scale the desktop hero as one Figma composition instead of shrinking only its photo. */
+@media(min-width:761px){
+ .home-hero{display:block;height:auto;min-height:0;aspect-ratio:1440/679;padding:0}
+ .home-hero>.container{position:absolute;inset:0;width:100%;max-width:none;margin:0}
+ .home-hero .hero-copy{position:absolute;left:9.49375%;top:29.3078056%;width:44.98104%;margin:0}
+ .home-hero .hero-copy h1{max-width:none;font-size:clamp(32px,3.702986vw,64px);font-weight:600;line-height:1.08;letter-spacing:-.03em;margin:0 0 .14485em}
+ .home-hero .hero-copy>p{font-size:clamp(16px,1.5429167vw,26.66px);line-height:1.15;margin:0;color:rgba(255,255,255,.59)}
+ .home-hero .hero-copy .actions{margin-top:2.538146vw;gap:1.059028vw}
+ .home-hero .hero-copy .button{width:clamp(155px,13.819444vw,220px);height:40px;font-size:clamp(12px,1.099236vw,18px)}
+ .home-hero .hero-person{left:53.66%;right:auto;top:3.6818851%;bottom:auto;width:37.27%;height:auto;aspect-ratio:2726/4096;object-fit:cover}
+}
+
+/* Uploaded Figma hero image: preserve the wider composition. */
+@media(min-width:761px){.home-hero .hero-person{left:auto;right:0;top:auto;bottom:0;width:47.708333%;height:auto;aspect-ratio:2048/1498;object-fit:contain;object-position:right bottom}}
+@media(max-width:760px){.home-hero .hero-person{left:auto;right:0;top:auto;bottom:0;width:100%;height:auto;aspect-ratio:2048/1498;object-fit:contain;object-position:right bottom}}
+

@@ -1,0 +1,5 @@
+/* Visibility is never gated on image loading or animation completion. */
+#main .reveal:not(.service-card){opacity:1;transform:none;transition:none}
+@media(prefers-reduced-motion:reduce){
+ #main .reveal{opacity:1;transform:none}
+}

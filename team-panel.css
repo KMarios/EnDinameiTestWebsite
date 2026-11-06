@@ -1,0 +1,16 @@
+/* The caption grows upward without moving the card, name or role. */
+.team-card{--panel-expansion:0px;--bio-opacity:0;--bio-offset:10px}
+.team-card .caption{position:relative;z-index:2;border-radius:22px;transition:none}
+.team-card:is(:hover,:focus-visible) .caption{border-radius:22px}
+.team-card .caption::before{content:"";position:absolute;z-index:-1;left:0;right:0;bottom:0;height:calc(100% + var(--panel-expansion));border-radius:22px;background:#37626f;transition:height 520ms cubic-bezier(.22,1,.36,1);pointer-events:none}
+.team-card .caption h3,.team-card .caption .role{transition:none}
+.team-card .caption .role{font-size:clamp(11px,4.9384cqw,17.087px)}
+.team-card .bio-preview{inset:auto 16px calc(100% + 18px);z-index:1;padding:0;background:none;display:block;opacity:var(--bio-opacity);transform:translateY(var(--bio-offset));transition:opacity 260ms ease,transform 420ms cubic-bezier(.22,1,.36,1)}
+.team-card:is(:hover,:focus-visible) .bio-preview{opacity:var(--bio-opacity)}
+.team-card .bio-preview p{font-size:clamp(12px,4.335cqw,15px);line-height:1.4;color:rgba(255,255,255,.8);-webkit-line-clamp:6}
+.team-card .profile-arrow{width:25.6543px;height:25.6543px;bottom:12px;right:13px}
+.team-card:focus-visible{--panel-expansion:91.91cqw;--bio-opacity:1;--bio-offset:0px}
+@media(hover:hover) and (pointer:fine){
+ .team-card:hover{--panel-expansion:91.91cqw;--bio-opacity:1;--bio-offset:0px}
+}
+@media(prefers-reduced-motion:reduce){.team-card .caption::before,.team-card .bio-preview{transition:none}}

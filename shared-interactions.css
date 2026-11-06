@@ -1,0 +1,36 @@
+/* One CTA size and motion, including navigation and assessment callouts. */
+:root{--cta-font:clamp(12px,1.099236vw,18px);--cta-width:clamp(155px,13.819444vw,220px)}
+body .button,body .home-hero .hero-copy .button,body .first-step--updated .step-copy .button,body .services-assessment-button,body .nav-links .services-mega-contact{
+ min-width:var(--cta-width);width:max-content;max-width:100%;height:40px;min-height:40px;padding:0 16px 0 20px;gap:16px;font-family:Manrope,sans-serif;font-size:var(--cta-font);font-weight:400;line-height:normal;border-radius:40px;box-sizing:border-box;transition:background .25s,transform .3s,box-shadow .3s;translate:none;
+}
+body .button>span,body .first-step--updated .step-copy .button>span,body .nav-links .services-mega-contact>span,body .services-assessment-button>img{width:24px;height:24px;flex:none;transition:transform .3s,background .25s;translate:none}
+body .button>span img,body .nav-links .services-mega-contact>span img{width:100%;height:100%;object-fit:contain}
+body .button:is(:hover,:focus-visible),body .first-step--updated .step-copy .button:is(:hover,:focus-visible),body .services-assessment-button:is(:hover,:focus-visible),body .nav-links .services-mega-contact:is(:hover,:focus-visible){background:#a46a96;transform:translateY(-3px);box-shadow:0 8px 25px #1d3c4520;translate:none}
+body .button:is(:hover,:focus-visible)>span,body .first-step--updated .step-copy .button:is(:hover,:focus-visible)>span,body .nav-links .services-mega-contact:is(:hover,:focus-visible)>span,body .services-assessment-button:is(:hover,:focus-visible)>img{transform:translate(2px,-2px);translate:none}
+body .nav-links .services-mega-contact:is(:hover,:focus-visible){color:white}
+body .nav-links .services-mega-contact:is(:hover,:focus-visible)>span{background:#37626f}
+.hero-doctors{--glass-x:50%;--glass-y:50%;transform:perspective(800px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(var(--card-lift,0px));transition:transform .4s cubic-bezier(.2,.7,.2,1),background .35s,box-shadow .35s;box-shadow:inset 0 0 0 1px rgba(255,255,255,.09)}
+.hero-doctors::after{content:'';position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(circle at var(--glass-x) var(--glass-y),rgba(255,255,255,.22),rgba(197,138,183,.08) 45%,transparent 75%);opacity:0;transition:opacity .35s;z-index:2}
+@media(hover:hover) and (pointer:fine){.hero-doctors:hover{--card-lift:-3px;background:rgba(255,255,255,.15);box-shadow:inset 0 0 0 1px rgba(255,255,255,.24),0 14px 35px rgba(0,0,0,.15)}.hero-doctors:hover::after{opacity:1}}
+@media(max-width:760px){:root{--cta-font:12px;--cta-width:155px}}
+@media(prefers-reduced-motion:reduce){body .button,body .button>span,body .first-step--updated .step-copy .button,body .first-step--updated .step-copy .button>span,body .nav-links .services-mega-contact,body .nav-links .services-mega-contact>span,body .services-assessment-button,body .services-assessment-button>img,.hero-doctors,.hero-doctors::after{transition:none}.hero-doctors{transform:none}}
+
+/* Dropdown CTA matches the supplied white, compact reference. */
+body .nav-links .services-mega-contact{min-width:0;width:180px;height:40px;min-height:40px;padding:0 6px 0 16px;gap:10px;font-size:13px;background:white;color:#37626f}
+body .nav-links .services-mega-contact>span{width:24px;height:24px;background:#3b808b}
+/* Animate the existing category divider; icons only change color. */
+body .nav-links .service-nav-link,body .nav-links .service-nav-link:is(:hover,:focus-visible){background:transparent;transition:none}
+body .nav-links .service-nav-link::after{content:'';position:absolute;left:0;right:0;bottom:-1px;width:100%;height:1px;background:#a46a96;transform:scaleX(0);transform-origin:left;transition:transform 400ms cubic-bezier(.22,.61,.36,1);pointer-events:none}
+body .nav-links .service-nav-link:is(:hover,:focus-visible)::after{transform:scaleX(1)}
+body .nav-links .service-nav-link:last-child{border-bottom:1px solid #dfe7e7}
+.service-nav-symbol img{transition:filter 180ms ease}
+body .nav-links .service-nav-link:is(:hover,:focus-visible) .service-nav-symbol img{transform:none}
+@media(prefers-reduced-motion:reduce){body .nav-links .service-nav-link::after,.service-nav-symbol img{transition:none}}
+/* White service-card symbols on pointer hover and keyboard focus. */
+.home-services--updated .service-cards .service-card .service-design-icon{transition:transform 420ms cubic-bezier(.22,1,.36,1),filter 260ms ease}
+.home-services--updated .service-cards .service-card:is(:hover,:focus-visible) .service-design-icon{filter:brightness(0) invert(1)}
+@media(prefers-reduced-motion:reduce){.home-services--updated .service-cards .service-card .service-design-icon{transition:none}}
+
+/* Keep the dropdown arrow lighter inside its existing circle. */
+body .nav-links .services-mega-contact>span img{width:16px;height:16px;object-fit:contain}
+

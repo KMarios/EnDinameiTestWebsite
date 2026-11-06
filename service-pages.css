@@ -1,0 +1,49 @@
+
+/* Revised service frames: 1440px reference, 538px hero, assessment at y=1664. */
+.service-section{position:relative;padding:75.51px 0 0;overflow:hidden;isolation:isolate}
+.service-section>.container{position:relative;z-index:1;width:80.9722%;max-width:1166px}
+.service-section .service-intro{grid-template-columns:repeat(2,minmax(0,1fr));gap:12.745%;min-height:136.49px;margin:0}
+.service-section .service-intro .eyebrow{font-size:16px;line-height:18px;margin:0}
+.service-section .service-intro h2{font-size:32px;line-height:1.15;max-width:none;margin:0;color:#414141}
+.service-section .service-intro>p{font-size:15px;line-height:1.6;max-width:none;margin:18px 0 0}
+.service-section .tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:11px;height:43px;margin:0 0 54.72px}
+.service-section .tab{height:43px;min-width:0;padding:0 8px;border-width:.5px;font-size:14.239px;line-height:1.15;white-space:nowrap}
+.service-section .service-detail{display:block;min-height:816.28px}
+.service-section .service-text{position:relative;max-width:543.512px;width:46.6134%;padding:0}
+.service-section .service-text p{font-size:19.895px;line-height:1.15;margin:0 0 22.879px;color:#223e43}
+.service-section .service-text p:last-child{margin-bottom:0}
+.service-visual{position:absolute;z-index:0;left:var(--visual-left);bottom:var(--visual-bottom);width:var(--visual-width);aspect-ratio:var(--visual-ratio);pointer-events:none}
+.service-visual>.service-photo{display:block;width:100%;height:100%;max-width:none;object-fit:var(--visual-fit);object-position:center bottom}
+.service-section+.assessment{min-height:633.922px}
+@media(min-width:761px) and (max-width:1100px){
+ .service-section>.container{width:calc(100% - 80px)}
+ .service-section .service-intro{gap:10%;min-height:165px}
+ .service-section .service-intro h2{font-size:28px}
+ .service-section .service-intro>p{font-size:14px}
+ .service-section .tabs{gap:6px}
+ .service-section .tab{font-size:11px;padding:0 4px}
+ .service-section .service-text p{font-size:17px;line-height:1.3}
+ .service-section .service-detail{min-height:750px}
+}
+@media(max-width:760px){
+ .service-section{padding-top:55px}
+ .service-section>.container{width:calc(100% - 40px)}
+ .service-section .service-intro{grid-template-columns:1fr;gap:15px;min-height:0;margin-bottom:25px}
+ .service-section .service-intro .eyebrow{font-size:14px;line-height:1.15;margin-bottom:8px}
+ .service-section .service-intro h2{font-size:28px}
+ .service-section .service-intro>p{margin:0;font-size:15px;line-height:1.6}
+ .service-section .tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;height:auto;margin-bottom:35px}
+ .service-section .tab{height:auto;min-height:43px;font-size:12px;white-space:normal;padding:10px 8px}
+ .service-section .service-detail{min-height:0}
+ .service-section .service-text{width:100%;max-width:none;padding:0 0 15px;min-height:0}
+ .service-section .service-text p{font-size:16px;line-height:1.45;margin-bottom:20px}
+ .service-visual{position:relative;inset:auto;width:100%;height:400px;aspect-ratio:auto;margin-top:15px}
+ .service-visual>.service-photo{object-fit:contain;object-position:center bottom}
+ .service-section+.assessment{min-height:440px}
+}
+
+/* Service names need their own space instead of overflowing equal tracks. */
+.service-section .tabs{grid-template-columns:repeat(6,minmax(min-content,1fr));height:auto;gap:12px;margin-top:24px;margin-bottom:54px;overflow:visible}
+.service-section .tab{width:100%;height:auto;min-height:43px;padding:11px 12px;font-size:14px;line-height:1.3;white-space:normal;overflow-wrap:normal;text-align:center}
+@media(min-width:761px) and (max-width:1250px){.service-section .tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.service-section .tab{font-size:14px}}
+@media(max-width:760px){.service-section .tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:0;margin-bottom:35px}.service-section .tab{font-size:12px;padding:10px 8px}}

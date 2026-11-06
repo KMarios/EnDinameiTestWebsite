@@ -1,0 +1,23 @@
+/* Isolated implementation of Figma frame 23:2211. */
+.services-assessment{position:relative;width:100%;aspect-ratio:1439.4140625/633.9215088;overflow:hidden;background:#1d3c45;color:white;container-type:inline-size;text-align:center;isolation:isolate}
+.services-assessment-art{position:absolute;display:flex;align-items:center;justify-content:center;container-type:size;pointer-events:none;z-index:0}
+.services-assessment-art>div{flex:none}
+.services-assessment-art img{display:block;width:100%;height:100%;max-width:none}
+.services-assessment-art--right{inset:.01% -38.46% -75.52% 21.63%}
+.services-assessment-art--right>div{width:hypot(88.0297cqw,-40.3757cqh);height:hypot(11.9703cqw,59.6243cqh);transform:rotate(-16.88deg)}
+.services-assessment-art--left{inset:-152.79% 31.91% -14.52% -17.42%}
+.services-assessment-art--left>div{width:hypot(47.9337cqw,-84.3976cqh);height:hypot(-52.0663cqw,-15.6024cqh);transform:rotate(112.42deg) skewX(2.82deg) scaleX(-1)}
+.services-assessment h2{position:absolute;z-index:1;top:31.3475%;left:50.02035%;width:99.9593%;transform:translateX(-50%);font:400 3.0568cqw/1.15 Manrope,sans-serif;letter-spacing:0;margin:0}
+.services-assessment-tagline{position:absolute;z-index:1;top:41.881%;left:49.6879%;width:60.715%;transform:translateX(-50%);font:400 1.548cqw/1.15 Manrope,sans-serif;letter-spacing:0;color:rgba(255,255,255,.67);margin:0}
+.services-assessment-copy{position:absolute;z-index:1;top:50.691%;left:49.6879%;width:60.715%;transform:translateX(-50%);font:400 1.3644cqw/1.15 Manrope,sans-serif;margin:0;letter-spacing:0}
+.services-assessment-copy span{color:#bc78ab}
+.services-assessment-actions{position:absolute;z-index:1;top:61.5098%;left:50%;transform:translateX(-50%);display:flex;gap:1.06856cqw;align-items:center}
+.services-assessment-button{display:flex;align-items:center;justify-content:space-between;width:17.957cqw;height:3.096cqw;padding:0 1.23cqw;border-radius:7.74cqw;background:rgba(59,128,139,.48);font:400 1.368cqw/normal Manrope,sans-serif;white-space:nowrap;color:white;text-decoration:none;transition:background 250ms ease,translate 300ms ease}
+.services-assessment-button--phone{width:12.7135cqw;padding:0 .571cqw;font-size:1.228cqw;background:white;color:#37626f}
+.services-assessment-button>img{width:1.9856cqw;height:1.9856cqw;max-width:none;flex:none;transition:translate 300ms ease}
+.services-assessment-button:hover{background:#a46a96;translate:0 -3px}
+.services-assessment-button--phone:hover{background:#f0dce9}
+.services-assessment-button:hover>img{translate:2px -2px}
+.services-assessment-button:focus-visible{outline:2px solid #e8c8df;outline-offset:4px}
+@media(max-width:760px){.services-assessment{aspect-ratio:auto;min-height:500px;padding:90px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}.services-assessment h2,.services-assessment-tagline,.services-assessment-copy,.services-assessment-actions{position:relative;inset:auto;transform:none;width:100%}.services-assessment h2{font-size:32px}.services-assessment-tagline{font-size:16px}.services-assessment-copy{font-size:16px;line-height:1.5}.services-assessment-actions{justify-content:center;gap:12px;flex-wrap:wrap}.services-assessment-button{width:244px;height:44px;padding:0 16px;font-size:17px;border-radius:40px}.services-assessment-button--phone{width:183px;font-size:17px}.services-assessment-button>img{width:28.5814px;height:28.5814px}}
+@media(prefers-reduced-motion:reduce){.services-assessment-button,.services-assessment-button>img{transition:none}}

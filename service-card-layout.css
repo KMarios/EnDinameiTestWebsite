@@ -1,0 +1,41 @@
+/* Larger service cards with a consistent, readable type scale. */
+.home-services--updated>.container{display:block}
+.home-services--updated>.container>.reveal{position:relative;top:auto;display:grid;grid-template-columns:1fr 1fr;column-gap:48px;align-items:start}
+.home-services--updated>.container>.reveal>.eyebrow{grid-column:1;font-size:16px}
+.home-services--updated>.container>.reveal>h2{grid-column:1;font-size:32px;line-height:1.2;max-width:520px}
+.home-services--updated .all-services-button{grid-column:1;justify-self:start;font-size:16px;margin-top:26px}
+.home-services--updated .services-intro-note{grid-column:2;grid-row:2/4;align-self:center;font-size:16px;line-height:1.6;max-width:520px;margin:0}
+.home-services--updated .service-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:none;margin-top:48px}
+.home-services--updated .service-cards .service-card.reveal{position:relative;top:auto;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;width:100%;height:auto;min-height:300px;aspect-ratio:auto;padding:28px;isolation:isolate;transform:none!important}
+.home-services--updated .service-cards .service-card .service-design-icon{left:28px;top:28px;width:32px;height:32px;object-fit:contain;transform-origin:center;transition:transform 420ms cubic-bezier(.22,1,.36,1)}
+.home-services--updated .service-cards .service-card .card-title{position:relative;left:auto;top:auto;max-width:68%;width:auto;font:400 24px/1.25 Manrope,sans-serif;margin:0;transform:none!important;transform-origin:left center;transition:scale 420ms cubic-bezier(.22,1,.36,1);z-index:2}
+.home-services--updated .service-cards .service-card .card-title:after{display:none;content:none}
+.home-services--updated .service-cards .service-card .service-card-excerpt{position:relative;left:auto;top:auto;width:62%;max-width:none;min-height:72px;font:400 16px/1.5 Manrope,sans-serif;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;z-index:2;color:#e1e9eb}
+.home-services--updated .service-cards .service-card .card-photo{position:absolute;left:51%;right:-5%;top:auto;bottom:0;width:54%;height:100%;aspect-ratio:auto;overflow:hidden;z-index:0;pointer-events:none}
+.home-services--updated .service-cards .service-card .card-person{width:100%;height:100%;object-fit:contain;object-position:center bottom;transform:none!important;transition:none!important}
+.home-services--updated .service-cards .service-card:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#1d3c45 35%,rgba(29,60,69,.3) 70%,transparent);pointer-events:none;z-index:1}
+.home-services--updated .service-cards .service-card:focus-visible{outline:2px solid #a46a96;outline-offset:4px;box-shadow:inset 3px 0 #a46a96!important}
+.home-services--updated .service-cards .service-card:focus-visible .service-design-icon{transform:scale(1.15)}
+.home-services--updated .service-cards .service-card:focus-visible .card-title{scale:1.05}
+@media(hover:hover){
+.home-services--updated .service-cards .service-card:hover{box-shadow:inset 3px 0 #a46a96!important}
+.home-services--updated .service-cards .service-card:hover .service-design-icon{transform:scale(1.15)}
+.home-services--updated .service-cards .service-card:hover .card-title{scale:1.05}
+}
+@media(min-width:761px) and (max-width:1000px){
+.home-services--updated .service-cards .service-card.reveal{min-height:320px;padding:24px}
+.home-services--updated .service-cards .service-card .service-design-icon{left:24px;top:24px}
+.home-services--updated .service-cards .service-card .card-title{font-size:22px;max-width:80%}
+.home-services--updated .service-cards .service-card .service-card-excerpt{width:76%;min-height:96px;-webkit-line-clamp:4}
+}
+@media(max-width:760px){
+.home-services--updated>.container>.reveal{display:block}
+.home-services--updated>.container>.reveal>h2{font-size:28px}
+.home-services--updated .services-intro-note{margin-top:28px;font-size:16px}
+.home-services--updated .service-cards{grid-template-columns:minmax(0,1fr);gap:20px;margin-top:32px}
+.home-services--updated .service-cards .service-card.reveal{min-height:300px;padding:24px}
+.home-services--updated .service-cards .service-card .service-design-icon{left:24px;top:24px}
+.home-services--updated .service-cards .service-card .card-title{font-size:22px;max-width:80%}
+.home-services--updated .service-cards .service-card .service-card-excerpt{width:74%;font-size:16px;min-height:96px;-webkit-line-clamp:4}
+}
+@media(prefers-reduced-motion:reduce){.home-services--updated .service-cards .service-card .service-design-icon,.home-services--updated .service-cards .service-card .card-title{transition:none}}

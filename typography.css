@@ -1,0 +1,63 @@
+/* Typography transcribed from the supplied Figma frames. */
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('assets/manrope-400.ttf') format('truetype')}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url('assets/manrope-500.ttf') format('truetype')}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('assets/manrope-600.ttf') format('truetype')}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('assets/manrope-700.ttf') format('truetype')}
+body{font-family:Manrope,Arial,sans-serif;font-weight:400;letter-spacing:0;word-spacing:normal}
+h1,h2,h3{font-weight:400;letter-spacing:0;line-height:1.15}
+p,li,a,button,summary{letter-spacing:0;word-spacing:normal}
+.eyebrow,.faq-aside .eyebrow{font-family:Manrope,Arial,sans-serif;font-size:16px;font-weight:500;line-height:1.15;letter-spacing:-.32px;color:#3b808b}
+.nav-links{font-family:Manrope,Arial,sans-serif;font-size:14.803px;line-height:1.15}.nav-address{font-size:20px;line-height:1.15}
+.button,.hero-copy .button{font-size:15.829px;font-weight:400;line-height:normal}
+.home-hero h1{font-size:53.323px;font-weight:600;line-height:1.08;letter-spacing:-1.5997px}
+.home-hero .hero-copy>p{font-size:22.218px;line-height:1.15}
+.home-services h2,.story-copy h2,.first-step .step-copy h2,.team-showcase h2,.team-bottom h3,.service-intro h2,.profile-heading h1,.profile-lead,.articles-intro,.faq-aside h2{font-size:32px;line-height:1.15;letter-spacing:0}
+.service-card .card-title{font-size:16px;font-weight:400;line-height:normal;letter-spacing:0}
+.story-copy p{font-size:16px;line-height:1.4}.play-copy h2{font-size:32.12px;line-height:1.15}.play-copy .eyebrow{font-size:16.06px;letter-spacing:-.3212px}
+.first-step .step-copy>p,.team-showcase p:not(.eyebrow){font-size:16px;line-height:1.15}
+.team-showcase h2{max-width:441.078px}.team-showcase p:not(.eyebrow){max-width:397.527px}
+.team-bottom p{font-size:16px;line-height:1.23}.team-bottom li{font-size:16px;line-height:1.7}
+.faq summary{font-size:19.346px;line-height:1.15;letter-spacing:0}.faq details>p{font-size:17px;line-height:1.15;letter-spacing:0}
+.page-hero h1{font-size:46.399px;line-height:1.15;letter-spacing:0}
+.service-intro>p{font-size:15px;line-height:1.6}.tab{font-size:14.239px;line-height:1.15;font-weight:400;padding:12px 10px;min-width:0}
+.service-text p{font-size:19.895px;line-height:1.15;letter-spacing:0}
+.assessment h2{font-size:44px;line-height:1.15}.assessment .tagline{font-family:Manrope,Arial,sans-serif;font-size:22.282px;line-height:1.15;letter-spacing:0}.assessment-content>p:not(.tagline){font-size:19.639px;line-height:1.15}
+.profile-heading .role,.profile-heading .experience{font-size:14.396px;line-height:normal}.profile-heading h1{line-height:normal}.profile-body{font-size:19px;line-height:1.15}.profile-lead{line-height:1.15}
+.team-heading h2{font-size:40px;line-height:1.15}.team-card h3{font-size:25.631px;line-height:normal;letter-spacing:0}.team-card .role{font-size:17.087px;line-height:normal}
+.article-card h3{font-size:18px;font-weight:600;line-height:1.12;letter-spacing:0}.article-meta{font-size:14px;font-weight:600;line-height:1.12;color:rgba(0,0,0,.343)}
+.article-grid.four h3{font-family:Manrope,Arial,sans-serif;font-size:17.742px;font-weight:400;line-height:1.12;letter-spacing:0}
+.section:has(>.container>.article-grid.four) h2{font-size:38.496px;line-height:1.15}
+.article-hero h1{font-size:28px;font-weight:600;line-height:1.15;letter-spacing:-.84px;max-width:431.344px}
+.article-body{font-family:Manrope,Arial,sans-serif;font-size:13.134px;line-height:1.47;max-width:745.969px}.article-body p{line-height:1.47;margin-bottom:20.639px}.article-body h2{letter-spacing:0;line-height:1.47}
+.footer-nav{font-size:13.416px;line-height:1.15}.footer-info{font-size:11.103px;line-height:1.15}.footer-info address{font-family:Manrope,Arial,sans-serif;line-height:1.6}.footer-bottom{font-size:20px;line-height:1.15}
+@media(max-width:1100px) and (min-width:761px){.nav-links{font-size:13px}.nav-address{font-size:16px}.home-hero h1{font-size:44px}.tab{font-size:12px}.faq summary{font-size:17px}.faq details>p{font-size:15px}}
+@media(max-width:760px){.nav-links{font-size:18px}.nav-address{font-size:14px}.button,.hero-copy .button{font-size:12px}.home-hero h1{font-size:36px;letter-spacing:-1.08px}.home-hero .hero-copy>p{font-size:16px}.eyebrow,.faq-aside .eyebrow{font-size:13px;letter-spacing:-.26px}.home-services h2,.story-copy h2,.first-step .step-copy h2,.team-showcase h2,.team-bottom h3,.service-intro h2,.profile-heading h1,.profile-lead,.articles-intro,.faq-aside h2,.play-copy h2{font-size:28px}.service-card .card-title{font-size:10px}.page-hero h1{font-size:34px}.service-text p{font-size:17px}.tab{font-size:12px}.team-heading h2{font-size:30px}.team-card h3{font-size:23px}.team-card .role{font-size:15px}.profile-body{font-size:17px}.faq summary{font-size:15px;line-height:1.25}.faq details>p{font-size:14px;line-height:1.4}.article-hero h1{font-size:27px;max-width:calc(100% - 40px)}.article-body{font-size:13.134px}.section:has(>.container>.article-grid.four) h2{font-size:28px}.assessment h2{font-size:32px}.assessment .tagline{font-size:16px}.assessment-content>p:not(.tagline){font-size:16px}.footer-bottom{font-size:15px}}
+
+/* Team captions: proportions from Figma 23:1383; Manrope throughout. */
+.team-card{container-type:inline-size}
+.team-card .caption{min-height:20.255cqw;padding:.616cqw 13.934cqw 2.37cqw 3.4cqw;border-radius:3.46cqw}
+.team-card .caption h3{font-size:7.413cqw;font-weight:400;line-height:1.393;margin:0;letter-spacing:0}
+.team-card .caption .role{font-size:4.942cqw;font-weight:400;line-height:1.3;margin:0;color:rgba(255,255,255,.55)}
+.team-card .profile-arrow{right:2.46cqw;top:6.42cqw;width:25.6543px;height:25.6543px;background:none;border-radius:0;transition:transform 280ms ease}
+.team-card .profile-arrow-icon{width:auto;height:auto;max-width:none;display:block}
+.team-card:hover .profile-arrow,.team-card:focus-visible .profile-arrow{transform:translate(1px,-1px)}
+@media(max-width:760px){
+ .team-card .caption{padding:7px 31px 9px 9px;min-height:70px;border-radius:9px}
+ .team-card .caption h3{font-size:clamp(14px,7.413cqw,25.631px);line-height:1.25;margin-bottom:4px}
+ .team-card .caption .role{font-size:clamp(11px,4.942cqw,17.087px);line-height:1.3}
+ .team-card .profile-arrow{right:6px;top:10px}
+}
+
+/* Footer links and contact details share one readable type scale. */
+.footer-nav,.footer-info{font-size:13px;line-height:1.5}
+.footer-bottom{font-size:16px;line-height:1.3}
+@media(max-width:760px){
+ .footer-nav,.footer-info{font-size:12px}
+ .footer-bottom{font-size:13px}
+}
+
+/* Consistent biography typography across team profiles. */
+.profile-section .profile-lead,.profile-section .profile-body{font-family:Manrope,Arial,sans-serif;font-size:15px;font-weight:400;font-style:normal;line-height:1.6;letter-spacing:0}
+
+.nav-links>.desktop-contact{white-space:nowrap}
+@media(max-width:760px){.nav-links>.desktop-contact{display:none}}

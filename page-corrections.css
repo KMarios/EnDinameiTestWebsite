@@ -1,0 +1,28 @@
+/* Updated Figma card 71:846: portrait, bio fade and a bottom-aligned role icon. */
+.team-card{border-radius:22px;transform:none;box-shadow:none;transition:none}
+.team-card:is(:hover,:focus-visible){transform:none;box-shadow:none}
+.team-card .team-photo{position:relative;aspect-ratio:1;overflow:hidden;border-radius:21.765px}
+.team-card .portrait,.team-card:hover .portrait{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;transform:none;transition:none}
+.team-card .bio-preview{position:absolute;inset:0;z-index:1;background:rgba(43,72,80,.95);padding:4.71cqw 4.71cqw 11.56cqw;display:flex;justify-content:flex-end;opacity:0;transition:opacity 300ms ease;pointer-events:none}
+.team-card:is(:hover,:focus-visible) .bio-preview{opacity:1}
+.team-card .bio-preview p{font-size:clamp(12px,4.335cqw,15px);line-height:1.15;color:rgba(255,255,255,.66);margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;overflow:hidden}
+.team-card .caption{position:relative;z-index:2;margin-top:-8.09cqw;min-height:max(70px,20.23cqw);border-radius:13px;padding:.72cqw 13.5cqw 3.2cqw 4.07cqw;background:#37626f}
+.team-card .caption h3{font-size:clamp(14px,7.413cqw,25.631px);font-weight:400;line-height:1.393;letter-spacing:0;margin:0 0 1.15cqw}
+.team-card .caption .role{font-size:clamp(11px,3.99cqw,13.806px);font-weight:400;line-height:1.3;margin:0;color:rgba(255,255,255,.55)}
+.team-card .profile-arrow{position:absolute;top:auto;bottom:3.27cqw;right:3.76cqw;width:30.2081px;height:30.2081px;background:none;border-radius:0;transform:none;transition:none}
+.team-card:is(:hover,:focus-visible) .profile-arrow{transform:none}
+.team-card .profile-arrow-icon{position:static;display:block;width:auto;height:auto;max-width:none}
+.team-card .profile-icon-glyph{position:absolute;left:50%;top:50%;width:auto;height:auto;max-width:none;transform:translate(-50%,-50%)}
+.team-card:focus-visible{outline:2px solid #a46a96;outline-offset:4px}
+
+/* Keep the arrow's existing open/closed rotation and add the shared button feedback. */
+.services-menu-toggle{border-radius:30px;transition:background 250ms ease,transform 300ms ease}
+.services-menu-toggle>span{transition:transform 300ms ease}
+.services-menu-toggle:focus-visible{outline:2px solid #a46a96;outline-offset:3px;background:rgba(164,106,150,.16)}
+@media(min-width:761px){.services-menu-toggle{width:26px}}
+@media(hover:hover) and (pointer:fine){
+ .services-menu-toggle:hover{background:#a46a96;transform:translateY(-2px)}
+}
+.footer-bottom a{color:inherit;transition:color 250ms ease}
+.footer-bottom a:is(:hover,:focus-visible){color:#a46a96}
+@media(prefers-reduced-motion:reduce){.team-card .bio-preview,.services-menu-toggle,.services-menu-toggle>span,.footer-bottom a{transition:none}.services-menu-toggle:hover{transform:none}}

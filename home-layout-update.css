@@ -1,0 +1,166 @@
+/* New middle/lower homepage layout; existing motion and upper-page styles remain intact. */
+.faq-aside .faq-vector-label{display:flex;align-items:center;gap:8px}
+.faq-aside .faq-vector-label:before{content:url('assets/section-new-line.svg');display:block;flex:none;line-height:0}
+.home-audience{margin-top:96px}
+.home-audience>h2{font-size:32px;line-height:1.15;letter-spacing:0;margin:0 0 30px}
+.audience-cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.audience-card{min-width:0;min-height:133px;padding:16px 15px 14px;border-radius:13px;background:#eef6f7;box-shadow:0 7px 16px #30353105}
+.audience-card .audience-icon{display:flex;align-items:center;justify-content:center;width:27px;height:27px;background:#3b808b;border-radius:50%;margin-bottom:11px}
+.audience-card .audience-icon img{width:14px;height:14px;max-width:none;filter:brightness(0) invert(1)}
+.audience-card h3{font:700 11.5px/1.4 Manrope,sans-serif;letter-spacing:0;color:#3b808b;margin:0 0 4px}
+.audience-card p{font:400 11.4px/16px Manrope,sans-serif;letter-spacing:0;color:#727772;margin:0}
+
+
+
+
+
+.first-step--updated .step-copy .eyebrow{font-size:16px;line-height:1.15;letter-spacing:-.32px;margin-bottom:8px;white-space:nowrap}
+.first-step--updated .step-copy .eyebrow:before,.home-reviews .eyebrow:before{content:url('assets/section-new-line.svg')}
+.first-step--updated .step-copy h2{font-size:32px;line-height:1.15;letter-spacing:0;margin-bottom:8px}
+.first-step--updated .step-copy>p:not(.eyebrow){font-size:16px;line-height:1.15;max-width:290.938px;color:rgba(255,255,255,.59);margin-bottom:45px}
+.home-reviews{background:#fff;padding:98px 0 150px;min-height:566px}
+.reviews-layout{display:grid;grid-template-columns:minmax(0,384.668fr) minmax(0,677fr);gap:88px;align-items:start;max-width:1151px}
+.reviews-intro{padding-top:4px}
+.reviews-intro .eyebrow{margin-bottom:8px}
+.reviews-intro h2{font-size:32px;line-height:1.15;letter-spacing:0;max-width:384.668px;margin:0 0 19px}
+.reviews-rating{display:flex;gap:13.699px;align-items:center}
+.reviews-score{font:400 73.061px/82.193px Manrope,sans-serif;letter-spacing:-4.5663px;color:#a46a96}
+.reviews-rating>div{display:flex;flex-direction:column;gap:5.708px}
+.reviews-rating img{max-width:none}
+.reviews-rating p{font:400 15.982px/32px Manrope,sans-serif;color:#53666b;margin:0;white-space:nowrap}
+.review-card{background:#1d3c45;color:#fff;min-height:308px;margin:0;padding:28px 36.73px 27px;box-shadow:0 9.114px 18.228px #0000000d}
+.review-card-top{display:flex;align-items:center;justify-content:space-between;color:#a46a96;font:500 18.228px/33.722px Manrope,sans-serif}
+.review-card-top img{max-width:none}
+.review-card blockquote{font:400 13.671px/25.292px Manrope,sans-serif;letter-spacing:0;margin:33px 0 34px}
+.review-card figcaption{display:flex;align-items:center;gap:13.675px}
+.review-avatar{position:relative;display:block;flex:none;width:54.685px;height:54.685px;overflow:hidden;border-radius:50%}
+.review-avatar img{position:absolute;left:-147.17px;top:-294.54px;width:657px;height:659px;max-width:none;object-fit:cover}
+.review-card strong{display:block;font:500 14.583px/17.499px Manrope,sans-serif;margin-bottom:3px}
+.review-card small{display:block;font:400 12.76px/23.606px Manrope,sans-serif}
+@media(min-width:1101px){
+ .first-step--updated .step-copy{align-self:flex-start;padding-top:170.35px}
+ .first-step--updated .step-person{top:auto;bottom:0;width:40.5%;max-width:491.134px;height:auto;object-fit:contain}
+}
+@media(max-width:1100px){
+ .audience-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .reviews-layout{gap:36px;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}
+ .first-step--updated .step-copy .eyebrow{font-size:14px;white-space:normal}
+}
+@media(max-width:760px){
+ .home-audience{margin-top:55px}
+ .home-audience>h2,.reviews-intro h2{font-size:28px}
+ .audience-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .audience-card{min-height:150px}
+ .audience-card h3{font-size:13px}
+ .audience-card p{font-size:12px;line-height:1.5}
+ .first-step--updated .step-copy h2{font-size:28px}
+ .first-step--updated .step-copy>p:not(.eyebrow){font-size:15px;margin-bottom:30px}
+ .home-reviews{padding:65px 0 75px;min-height:0}
+ .reviews-layout{grid-template-columns:1fr;gap:36px}
+ .reviews-intro h2{max-width:340px}
+ .review-card{padding:25px;min-height:308px}
+ .review-card blockquote{margin:26px 0 30px;font-size:14px;line-height:1.8}
+}
+
+/* Restore homepage team cards and bottom-aligned portrait. */
+.portrait-strip{gap:14px;padding-bottom:16px;align-items:flex-start}
+.portrait-strip .team-card{flex:0 0 31%;container-type:inline-size}
+.portrait-strip .team-card img{aspect-ratio:auto}
+.portrait-strip .team-card .portrait{width:100%;height:100%;object-fit:cover}
+.portrait-strip .team-card:hover img{transform:none}
+.portrait-strip .team-card .profile-arrow-icon{width:100%;height:100%;object-fit:contain}
+@media(hover:hover){
+.home-services--updated .service-card:hover{background:#244955!important;box-shadow:inset 3px 0 #a46a96!important}
+.home-services--updated .service-card:hover .service-design-icon{transform:translateY(-2px)}
+}
+.home-services--updated .service-card{transition:background-color 260ms ease,box-shadow 260ms ease!important}
+.home-services--updated .service-design-icon{transition:transform 260ms ease}
+.home-services--updated .service-card:focus-visible{background:#244955!important;outline:2px solid #a46a96;outline-offset:3px}
+@media(max-width:760px){.portrait-strip .team-card{flex-basis:65%}}
+@media(prefers-reduced-motion:reduce){.audience-card,.audience-card h3,.audience-card p,.audience-icon,.home-services--updated .service-card,.home-services--updated .service-design-icon{transition:none!important}}
+
+/* Preserve the portrait intrinsic proportions at every screen width. */
+.first-step .step-person{aspect-ratio:auto;height:auto;object-fit:contain;object-position:center bottom}
+@media(min-width:761px){.first-step .step-person{top:auto;bottom:0;max-height:100%;width:auto;max-width:40.5%;right:auto}}
+
+/* Figma frame 1:504, on its 1440 × 563 design canvas. */
+.first-step--updated{height:auto;aspect-ratio:1440/563;padding:0}
+.first-step--updated .step-layout{max-width:none;container-type:inline-size}
+.first-step--updated .step-portrait{position:absolute;left:4.82%;top:-23.79%;width:48.62%;aspect-ratio:583.2078247/668.5431519;z-index:1;transform:scaleX(-1);overflow:hidden}
+.first-step--updated .step-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.first-step--updated .step-copy{position:absolute;left:58.6264%;top:30.2575%;margin:0;width:26.713%;max-width:none;padding:0}
+.first-step--updated .step-copy .eyebrow{font-size:1.11111cqw;line-height:1.15;letter-spacing:-.02222cqw;margin:0 0 .55556cqw;gap:.4861cqw}
+.first-step--updated .step-copy .eyebrow:before{content:'';width:2.287cqw;height:.264cqw;background:url('assets/first-step-8ba2d.svg') center/contain no-repeat;flex:none}
+.first-step--updated .step-copy h2{font-size:2.22222cqw;line-height:1.15;margin:0 0 .55556cqw}
+.first-step--updated .step-copy>p:not(.eyebrow){font-size:1.11111cqw;line-height:1.15;max-width:20.204cqw;margin:0 0 3.125cqw}
+.first-step--updated .step-copy .button{width:18.05556cqw;height:2.77778cqw;min-height:0;font-size:1.09924cqw;background:rgba(59,128,139,.48);padding:0 .9cqw;gap:1cqw;justify-content:space-between}
+.first-step--updated .step-copy .button span{width:1.78153cqw;height:1.78153cqw;flex:none}
+@media(max-width:760px){
+.first-step--updated{aspect-ratio:auto;height:auto;padding:48px 0 0}
+.first-step--updated .step-layout{display:flex;flex-direction:column;height:auto}
+.first-step--updated .step-copy{position:relative;inset:auto;width:auto;margin:0 24px;max-width:400px;order:0}
+.first-step--updated .step-copy .eyebrow{font-size:14px;letter-spacing:-.28px;margin-bottom:10px;gap:8px}
+.first-step--updated .step-copy .eyebrow:before{width:30px;height:4px}
+.first-step--updated .step-copy h2{font-size:28px;margin-bottom:10px}
+.first-step--updated .step-copy>p:not(.eyebrow){font-size:16px;max-width:291px;margin-bottom:28px}
+.first-step--updated .step-copy .button{width:260px;height:40px;font-size:15px;padding:0 13px;gap:14px}
+.first-step--updated .step-copy .button span{width:25.654px;height:25.654px}
+.first-step--updated .step-portrait{position:relative;inset:auto;width:85%;max-width:420px;aspect-ratio:583.2078247/668.5431519;margin:-32px 0 0;order:1}
+}
+
+@media(min-width:761px){.first-step--updated .step-layout{position:absolute;inset:0;width:100%;height:100%}}
+
+/* Give the first-step subtitle room for two desktop lines. */
+@media(min-width:761px){.first-step--updated .step-copy{width:36%;max-width:none}.first-step--updated .step-copy>p:not(.eyebrow){max-width:none;width:100%;text-wrap:pretty}}
+
+/* Scale the 346 × 387 Figma team card as one composition. */
+.portrait-strip .team-card{aspect-ratio:346/387;border-radius:6.3584% / 5.6848%;overflow:hidden;flex-shrink:0}
+.portrait-strip .team-card .team-photo{width:100%;aspect-ratio:1;overflow:hidden;border-radius:6.2905cqw}
+.portrait-strip .team-card .portrait{display:block;width:100%;height:100%;aspect-ratio:1;object-fit:cover;object-position:center}
+.portrait-strip .team-card .caption{position:relative;min-height:20.2312cqw;height:20.2312cqw;margin-top:-8.3815cqw;padding:.7225cqw 12.5cqw 2.37cqw 3.528cqw;border-radius:6.3584cqw;background:#37626f}
+.portrait-strip .team-card .caption::before{border-radius:6.3584cqw}
+.portrait-strip .team-card .caption h3{font:400 7.4078cqw/1.393 Manrope,sans-serif;letter-spacing:0;margin:0;white-space:nowrap}
+.portrait-strip .team-card .caption .role{font:400 4.9384cqw/1.3 Manrope,sans-serif;margin:0;color:rgba(255,255,255,.55)}
+.portrait-strip .team-card .profile-arrow{width:8.7307cqw;height:8.7307cqw;right:3.7626cqw;top:auto;bottom:3.2653cqw}
+.portrait-strip .team-card .profile-arrow-icon{width:100%;height:100%;max-width:100%;aspect-ratio:1}
+.portrait-strip .team-card .bio-preview{inset:auto 4.6243cqw calc(100% + 5.2023cqw);padding:0}
+.portrait-strip .team-card .bio-preview p{font-size:4.3353cqw;line-height:1.4}
+
+@media(max-width:760px){.first-step--updated .step-copy>p:not(.eyebrow){max-width:none;width:100%;font-size:14px;line-height:1.35}}
+
+/* Match the shared landing-page button hover. */
+.first-step--updated .step-copy .button{transition:background .25s,transform .3s,box-shadow .3s}
+.first-step--updated .step-copy .button:is(:hover,:focus-visible){background:#a46a96;transform:translateY(-3px);box-shadow:0 8px 25px #1d3c4520}
+.first-step--updated .step-copy .button span{transition:transform .3s}
+.first-step--updated .step-copy .button span img{width:100%;height:100%;max-width:none;transform:none}
+.first-step--updated .step-copy .button:is(:hover,:focus-visible) span{transform:translate(2px,-2px)}
+@media(prefers-reduced-motion:reduce){.first-step--updated .step-copy .button,.first-step--updated .step-copy .button span{transition:none}}
+
+/* Show all four homepage team cards at desktop widths. */
+@media(min-width:761px){.portrait-strip{--team-gap:clamp(10px,1vw,14px);gap:var(--team-gap);width:100%;overflow-x:hidden}.portrait-strip .team-card{flex:0 0 calc((100% - 3 * var(--team-gap))/4);min-width:0}}
+
+/* Patient reviews — Figma 125:161 (1430 × 566). */
+.home-reviews{padding:126.51px 0 129.49px;min-height:566px}
+.reviews-layout{width:80.475%;max-width:1150.79px;grid-template-columns:minmax(0,384.668fr) minmax(0,677fr);gap:87.72px;align-items:stretch}
+.reviews-intro{padding-top:0;display:flex;flex-direction:column;min-height:310px}
+.reviews-intro .eyebrow{font-size:16px;line-height:18.4px;letter-spacing:-.32px;margin:0 0 4.59px}
+.home-reviews .eyebrow:before{content:'';width:32.93px;height:3.8px;flex:none;background:url('assets/reviews-figma-8ba2d.svg') center/contain no-repeat}
+.reviews-intro h2{font-size:32px;line-height:1.15;max-width:384.668px;margin:0}
+.reviews-rating{margin-top:auto;gap:13.699px;min-height:59px;align-items:center}
+.reviews-score{font-size:52.031px;line-height:58.535px;letter-spacing:-3.2519px}
+.reviews-rating>div{gap:5.708px;height:48px}
+.review-card{height:310px;min-height:310px;padding:28.33px 36.73px 27.33px;border-radius:0;box-shadow:0 9.114px 18.228px #0000000d}
+.review-card-top{font-size:18.228px;line-height:33.722px;font-weight:400}
+.review-card-top img{margin-right:15.55px}
+.review-card blockquote{min-height:101.167px;display:flex;align-items:center;max-width:587.99px;font-size:13.671px;line-height:25.292px;margin:33.71px 0 31.06px}
+.review-card figcaption{gap:13.675px}
+.review-card strong{font-size:14.583px;line-height:17.499px;font-weight:500;margin-bottom:3px}
+.review-card small{font-size:12.76px;line-height:23.606px}
+@media(min-width:761px) and (max-width:1100px){.reviews-layout{width:86%;gap:40px;grid-template-columns:minmax(0,1fr) minmax(0,1.65fr)}.review-card{height:auto;min-height:310px}.review-card blockquote{min-height:101.167px}.reviews-intro{min-height:310px}}
+@media(max-width:760px){.home-reviews{padding:65px 0 75px;min-height:0}.reviews-layout{width:calc(100% - 48px);grid-template-columns:1fr;gap:36px}.reviews-intro{min-height:0;gap:0}.reviews-intro h2{font-size:28px}.reviews-rating{margin-top:30px}.review-card{height:auto;min-height:310px;padding:28px 25px}.review-card-top img{margin-right:0}.review-card blockquote{min-height:0;display:block;margin:26px 0 30px;font-size:14px;line-height:1.8}}
+
+/* Taller, static support cards. */
+.home-audience .audience-card{min-height:180px;padding:22px 18px;transition:none}
+.home-audience .audience-card .audience-icon{margin-bottom:18px;transition:none}
+.home-audience .audience-card h3{margin-bottom:8px;transition:none}
+.home-audience .audience-card p{transition:none}

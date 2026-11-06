@@ -1,0 +1,18 @@
+/* Keep photographs inside consistent frames without stretching or cutout imagery. */
+.article-card .image-wrap{aspect-ratio:1.54;overflow:hidden;background:#edf2f2}
+.article-card .image-wrap img{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:var(--article-focus,50% 55%)}
+.article-card .article-excerpt{font-size:14px;line-height:1.55;color:#687c81;margin:10px 0 0}
+.article-meta{flex-wrap:wrap;gap:5px 12px}
+.article-hero>img:not(.article-decoration){object-fit:cover;object-position:var(--article-focus,50% 55%)}
+.article-body .article-lead{font-size:17px;line-height:1.5;color:#37626f;margin-bottom:32px}
+.article-sources{margin:35px 0;padding-top:20px;border-top:1px solid #dfe7e7;font-size:13px}
+.article-sources h2{font-size:16px;margin:0 0 12px}
+.article-sources ul{padding-left:18px}
+.article-sources a{text-decoration:underline;text-underline-offset:3px}
+.nav-address{font-size:14.803px;line-height:1.15}
+@media(min-width:761px) and (max-width:1100px){.nav-address{font-size:13px}}
+@media(max-width:760px){
+ .article-card .article-excerpt{font-size:12px;line-height:1.5}
+ .article-meta{gap:6px}
+ .article-body .article-lead{font-size:16px}
+}

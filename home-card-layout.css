@@ -1,0 +1,49 @@
+/* Larger cards and readable typography only for the homepage team showcase. */
+.team-intro .team-showcase{grid-template-columns:minmax(0,1fr) minmax(0,1.9fr);gap:48px;align-items:start}
+.team-intro .team-showcase>div:first-child>p:not(.eyebrow){font-size:16px;line-height:1.5}
+.team-intro .team-showcase .carousel-buttons{display:none}
+.team-intro .portrait-strip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;width:100%;padding:0;overflow:visible;scroll-snap-type:none;align-items:start}
+.team-intro .portrait-strip .team-card{width:100%;min-width:0;aspect-ratio:auto;border-radius:20px;transform:none;align-self:stretch}
+.team-intro .portrait-strip .team-photo{aspect-ratio:1;border-radius:20px;overflow:hidden}
+.team-intro .portrait-strip .portrait{width:100%;height:100%;object-fit:cover;object-position:center}
+.team-intro .portrait-strip .caption{height:110px;min-height:110px;margin-top:-24px;padding:14px 52px 16px 16px;border-radius:20px}
+.team-intro .portrait-strip .caption::before{border-radius:20px}
+.team-intro .portrait-strip .caption h3{font:500 22px/1.25 Manrope,sans-serif;white-space:normal;margin:0 0 7px;letter-spacing:0}
+.team-intro .portrait-strip .caption .role{font:400 15px/1.4 Manrope,sans-serif;margin:0;color:#d2dfe3}
+.team-intro .portrait-strip .profile-arrow{width:30px;height:30px;right:14px;bottom:16px;top:auto}
+.team-intro .portrait-strip .bio-preview{inset:auto 18px calc(100% + 18px);padding:0}
+.team-intro .portrait-strip .bio-preview p{font-size:15px;line-height:1.45}
+@media(max-width:1000px){.team-intro .team-showcase{grid-template-columns:1fr;gap:36px}.team-intro .team-showcase>div:first-child{max-width:600px}}
+@media(max-width:620px){.team-intro .portrait-strip{grid-template-columns:1fr;gap:28px;max-width:420px;margin-inline:auto}.team-intro .portrait-strip .caption{min-height:110px;height:auto}.team-intro .portrait-strip .caption h3{font-size:22px}.team-intro .portrait-strip .caption .role{font-size:15px}}
+
+/* Smaller team cards and the same left inset as the FAQ heading. */
+.team-intro .team-showcase>div:first-child{padding-left:60.61px}
+.team-intro .portrait-strip{width:calc(80% + 4.8px);justify-self:center}
+.team-intro .portrait-strip .team-card{display:flex;flex-direction:column;border-radius:16px}
+.team-intro .portrait-strip .team-photo{flex:none;border-radius:16px}
+.team-intro .portrait-strip .caption{flex:1;height:auto;min-height:88px;margin-top:-19.2px;padding:11.2px 42px 12.8px 12.8px;border-radius:16px}
+.team-intro .portrait-strip .caption::before{border-radius:16px}
+.team-intro .portrait-strip .caption h3{font-size:18px;margin-bottom:5.6px}
+.team-intro .portrait-strip .caption .role{font-size:15px}
+.team-intro .portrait-strip .profile-arrow{width:24px;height:24px;right:11.2px;bottom:12.8px}
+@media(min-width:761px) and (max-width:1100px){.team-intro .team-showcase>div:first-child{padding-left:20px}}
+@media(max-width:760px){.team-intro .team-showcase>div:first-child{padding-left:0}}
+@media(max-width:620px){.team-intro .portrait-strip{width:80%;max-width:336px}.team-intro .portrait-strip .caption h3{font-size:18px}.team-intro .portrait-strip .caption{min-height:88px}}
+
+/* Requested text sizing and tighter team captions. */
+.home-services--updated .service-cards .service-card .service-card-excerpt{font-size:15px;line-height:1.4;width:58%;-webkit-line-clamp:2}
+.faq .faq-list details>p{font-size:15px;line-height:1.5}
+.faq .faq-aside>p:not(.faq-vector-label){font-size:15px!important;line-height:1.4}
+.team-intro .team-showcase>div:first-child>p:not(.eyebrow){font-size:15px;line-height:1.5}
+.team-intro .portrait-strip .caption{min-height:64px;height:auto;padding:6px 38px 8px 12px}
+.team-intro .portrait-strip .caption h3{font-size:18px;line-height:1.2;font-weight:400;margin-bottom:4px}
+.team-intro .portrait-strip .caption .role{font-size:15px;line-height:1.3}
+.team-intro .portrait-strip .profile-arrow{bottom:10px;right:10px}
+.play-copy h2,.team-intro .team-showcase h2,.faq-aside h2{font-weight:400}
+
+/* Keep the team heading on two deliberate lines. */
+.team-intro .team-showcase .team-intro-title{width:max-content;max-width:none;font-size:clamp(22px,2.25vw,32px);line-height:1.15}
+.team-intro .team-intro-title>span{display:block;white-space:nowrap}
+
+/* Softer service-card descriptions. */
+.home-services--updated .service-cards .service-card .service-card-excerpt{font-size:14px;font-weight:400;line-height:1.45;opacity:.72}

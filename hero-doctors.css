@@ -1,0 +1,25 @@
+/* Isolated addition: no overrides of hero, navigation or drawn-line styling. */
+.hero-doctors-mount{position:absolute;left:9.49375%;top:67.419735%;width:28.333333%;max-width:490px;aspect-ratio:408/172;z-index:3}
+.hero-doctors{position:relative;display:block;width:100%;height:100%;overflow:hidden;border-radius:8px;background:rgba(255,255,255,.1);backdrop-filter:blur(9px);color:#fff;isolation:isolate}
+.hero-doctors:focus-visible{outline:2px solid #c58ab7;outline-offset:5px}
+.hero-doctors-canvas{position:absolute;left:0;top:0;width:408px;height:172px;transform-origin:top left}
+.hero-doctor-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity 420ms ease,visibility 420ms}
+.hero-doctor-slide.is-active{opacity:1;visibility:visible}
+.hero-doctor-portrait{position:absolute;left:16.07px;top:17.03px;width:132.613px;height:137.944px;overflow:hidden;border-radius:5.786px}
+.hero-doctor-portrait img{position:absolute;max-width:none;object-fit:fill}
+.hero-doctor-portrait--apostolos img{width:103.62%;height:131.13%;left:0;top:-10.42%}
+.hero-doctor-portrait--maria img{width:125.8%;height:120.89%;left:-12.9%;top:-3.18%}
+.hero-doctors .hero-doctor-name{position:absolute;left:161.4px;top:12.64px;margin:0;font:400 20px/1.37 Manrope,sans-serif;letter-spacing:0;white-space:nowrap}
+.hero-doctors .hero-doctor-role{position:absolute;left:162.11px;top:38.09px;margin:0;font:400 10px/1.4 Manrope,sans-serif;color:#c58ab7;letter-spacing:0}
+.hero-doctor-number{position:absolute;left:161.4px;top:138.17px;font:400 10px/1.36 Manrope,sans-serif}
+.hero-doctor-experience{position:absolute;right:14.53px;top:137.17px;font:400 10px/1.4 Manrope,sans-serif;white-space:nowrap}
+.hero-doctor-progress{position:absolute;left:162.11px;top:154.47px;width:231.362px;height:1px}
+.hero-doctor-progress>img{position:absolute;left:0;top:0;max-width:none}
+.hero-doctor-progress-fill{position:absolute;inset:0;transform:scaleX(0);transform-origin:left;overflow:hidden}
+.hero-doctor-progress-fill img{position:absolute;left:0;top:0;max-width:none;transform:scaleX(4.659667);transform-origin:left}
+@media(max-width:760px){
+ .hero-doctors-mount{position:relative;left:auto;top:auto;width:min(408px,100%);max-width:none;margin-top:32px;aspect-ratio:408/172}
+}
+@media(prefers-reduced-motion:reduce){.hero-doctor-slide{transition:none}}
+
+.hero-doctor-portrait--member3 img,.hero-doctor-portrait--member4 img{width:100%;height:100%;left:0;top:0;object-fit:cover;object-position:center 30%}

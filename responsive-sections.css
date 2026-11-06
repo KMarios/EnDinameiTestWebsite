@@ -1,0 +1,71 @@
+/* Keep the Figma artwork and content on the same 1440px design canvas. */
+.service-artwork{position:absolute;z-index:0;inset:0;width:100%;max-width:1440px;margin-inline:auto;container-type:inline-size;pointer-events:none}
+.service-visual>.service-photo{object-fit:contain}
+
+/* Use the six assets' own dimensions, never stretch them into another ratio. */
+.home-services .service-card .card-person{display:block;width:100%;height:auto;min-height:0;aspect-ratio:auto;object-fit:contain}
+.home-services .service-card:nth-child(1) .card-photo{left:auto;right:2.1%;top:auto;bottom:0;width:47%;aspect-ratio:1024/702}
+.home-services .service-card:nth-child(2) .card-photo{aspect-ratio:683/1024}
+.home-services .service-card:nth-child(3) .card-photo{aspect-ratio:1024/810}
+.home-services .service-card:nth-child(4) .card-photo{aspect-ratio:1/1}
+.home-services .service-card:nth-child(5) .card-photo{aspect-ratio:1024/683}
+.home-services .service-card:nth-child(6) .card-photo{aspect-ratio:1024/682}
+
+/* Figma 89:43 supplies the intended crop, rather than the wider source photo. */
+.split-story{display:block;height:auto;min-height:0}
+.story-layout{display:grid;grid-template-columns:55.8958% 44.1042%;width:100%;max-width:1440px;margin-inline:auto;align-items:center}
+.split-story .story-copy{padding:60px 42px 60px clamp(24px,9.384vw,135.13px)}
+.split-story .story-copy h2{font-size:32.008px;line-height:1.15}
+.split-story .story-copy p{font-size:16.004px;line-height:1.4}
+.split-story .story-media{position:relative;height:auto;aspect-ratio:635.0802/613.159;align-self:center;overflow:hidden}
+.split-story .story-image{position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0;aspect-ratio:auto;object-fit:cover;object-position:61.3086% 50%;filter:none}
+
+/* Bottom-aligned portrait without enlarging it beyond its frame on wide screens. */
+.first-step{display:block;height:563px}
+.step-layout{position:relative;display:flex;align-items:center;width:100%;max-width:1440px;height:100%;margin-inline:auto;isolation:isolate}
+.first-step .step-person{left:8.88%;right:auto;top:auto;bottom:0;width:40.5%;max-width:491.134px;height:auto;aspect-ratio:583.208/668.543;object-fit:fill;z-index:1}
+.first-step .step-copy{margin-left:58.68%;width:30%;max-width:400px;z-index:2}
+.first-step .step-copy .button{max-width:100%}
+
+@media(min-width:761px) and (max-width:1100px){
+ .first-step{height:500px}
+ .first-step .step-person{width:39%;max-width:436px}
+ .first-step .step-copy{margin-left:55%;width:40%;padding-right:24px}
+ .first-step .step-copy h2{font-size:28px}
+ .service-section .tabs{height:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:36px}
+ .service-section .tab{font-size:13px;white-space:normal;padding:8px;min-height:43px;height:auto}
+}
+
+/* Phone service cards need room for Greek labels and the full composition. */
+@media(max-width:760px){
+ .home-services{padding:65px 0 75px}
+ .home-services>.container{width:calc(100% - 40px)}
+ .home-services .service-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:30px}
+ .home-services .service-card{aspect-ratio:379/171;height:auto;min-height:0;padding:18px;isolation:isolate}
+ .home-services .service-card .card-title{font-size:14px;line-height:1.3;max-width:48%;width:auto;overflow-wrap:normal;hyphens:none}
+ .home-services .service-card .card-person{width:100%;height:auto;object-fit:contain}
+ .home-services .service-card:nth-child(2) .card-photo{left:38.44%;right:-4.53%;top:-51.5%;width:auto;aspect-ratio:683/1024}
+}
+@media(max-width:600px){
+ .home-services .service-cards{grid-template-columns:minmax(0,1fr);gap:12px}
+ .home-services .service-card{padding:20px}
+ .home-services .service-card .card-title{font-size:16px;max-width:46%;line-height:1.35}
+}
+@media(max-width:1000px){
+ .story-layout{grid-template-columns:1fr}
+ .split-story .story-copy{width:100%;max-width:760px;margin-inline:auto;padding:60px 40px}
+ .split-story .story-media{width:100%;max-width:635.0802px;margin-inline:auto}
+}
+@media(max-width:760px){
+ .service-artwork{position:relative;inset:auto;max-width:640px;container-type:normal}
+ .service-artwork .service-visual{position:relative;inset:auto;width:100%;height:auto;min-height:0;aspect-ratio:var(--visual-ratio);margin:15px 0 0}
+ .service-artwork .service-photo{width:100%;height:100%;object-fit:contain}
+ .split-story .story-copy{padding:55px 24px}
+ .split-story .story-copy h2{font-size:28px}
+ .split-story .story-copy p{font-size:15px}
+ .first-step{height:auto;min-height:0}
+ .step-layout{height:auto;flex-direction:column;align-items:stretch;padding-top:55px}
+ .first-step .step-copy{order:1;width:auto;max-width:400px;margin:0 24px;align-self:center}
+ .first-step .step-copy h2{font-size:28px}
+ .first-step .step-person{position:relative;order:2;inset:auto;width:75%;max-width:340px;height:auto;margin:32px auto 0}
+}

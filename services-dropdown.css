@@ -1,0 +1,73 @@
+/* Services navigation, Figma 1:739. */
+.nav-services{display:flex;align-items:center;gap:5px}
+.services-menu-toggle{display:grid;place-items:center;width:15px;height:30px;border:0;padding:0;background:transparent;color:inherit}
+.services-menu-toggle>span{display:flex;align-items:center;justify-content:center;width:12px;height:12px;transform:rotate(90deg);transition:transform 220ms ease}
+.services-menu-toggle img{width:auto;height:auto;max-width:none}
+.nav-services.is-open>.services-menu-toggle>span{transform:rotate(-90deg)}
+.nav-services.is-open>a:after{transform:scaleX(1)}
+.services-mega{position:absolute;top:calc(100% + 16px);left:50%;width:80.9722%;max-width:1166px;padding:16px;display:grid;grid-template-columns:minmax(0,766fr) minmax(0,352fr);gap:16px;background:#fff;border-radius:12px;box-shadow:0 16px 40px rgba(12,37,43,.19);color:#1d3c45;opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,-6px);transition:opacity 180ms ease,transform 220ms ease,visibility 180ms;z-index:30;text-align:left}
+.nav-services.is-open>.services-mega{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}
+@media(min-width:761px){
+ .nav-links,.nav-services{height:100%}
+ .services-mega:before{content:'';position:absolute;left:0;right:0;top:-17px;height:17px}
+}
+.services-mega-links{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;border:1px solid #dfe7e7;border-radius:8px;padding:15px 23px;height:400px}
+.services-mega-column{min-width:0}
+.nav-links .service-nav-link{display:flex;align-items:center;gap:14px;height:122.6667px;padding:0;border-bottom:1px solid #dfe7e7;transition:background 180ms ease;border-radius:0}
+.nav-links .service-nav-link:last-child{border-bottom:0}
+.nav-links .service-nav-link:after,.nav-links .services-mega-contact:after{content:none}
+.service-nav-symbol{display:grid;place-items:center;flex:none;width:42px;height:44px;background:#f0f5f5;border-radius:8px;transition:background 180ms ease}
+.service-nav-symbol img[src$="/5d1fb.svg"]{filter:brightness(0) saturate(100%) invert(45%) sepia(15%) saturate(1165%) hue-rotate(140deg) brightness(93%) contrast(88%)}
+.nav-links .service-nav-link:hover .service-nav-symbol,.nav-links .service-nav-link:focus-visible .service-nav-symbol{background:#a46a96}
+.nav-links .service-nav-link:hover .service-nav-symbol img,.nav-links .service-nav-link:focus-visible .service-nav-symbol img{filter:brightness(0) invert(1)}
+.service-nav-symbol img{width:auto;height:auto;max-width:none}
+.service-nav-description{display:flex;flex-direction:column;gap:6px;min-width:0}
+.service-nav-description strong{font-family:Manrope,Arial,sans-serif;font-weight:600;font-size:15px;line-height:1.3;letter-spacing:0}
+.service-nav-description small{font-family:Manrope,Arial,sans-serif;font-weight:400;font-size:12px;line-height:1.45;color:#687c81;letter-spacing:0}
+.nav-links .service-nav-link:hover,.nav-links .service-nav-link:focus-visible{background:#f7f9f9}
+.services-mega-callout{position:relative;height:400px;overflow:hidden;border-radius:8px;background:#1d3c45}
+.services-mega-photographs{position:absolute;left:-29.63px;top:0;width:558.945px;height:400px}
+.services-mega-photographs img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover}
+.services-mega-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,60,69,0) 0%,rgba(29,60,69,.031) 36%,rgba(29,60,69,.851) 70%,#1d3c45 100%)}
+.services-mega-copy{position:absolute;left:24px;right:24px;top:233px;display:flex;flex-direction:column;gap:16px}
+.services-mega-copy h2{font-family:Manrope,Arial,sans-serif;font-size:23px;font-weight:600;line-height:1.22;letter-spacing:-.46px;color:white;margin:0 0 8px}
+.services-mega-copy p{font-size:12px;line-height:1.5;color:rgba(255,255,255,.8);margin:0}
+.services-mega-copy{gap:0}
+.nav-links .services-mega-contact{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 6px 0 16px;margin-top:16px;min-height:42px;border-radius:100px;background:white;color:#1d3c45;font-size:13px;font-weight:600;line-height:normal;transition:background 180ms ease}
+.services-mega-contact>span{display:grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:#3b808b;transition:background 180ms ease}
+.services-mega-contact img{width:auto;height:auto;max-width:none}
+.services-mega-contact:hover>span,.services-mega-contact:focus-visible>span{background:#a46a96}
+@media(min-width:761px) and (max-width:1200px){
+ .services-mega{width:calc(100% - 48px);grid-template-columns:minmax(0,1fr) 290px}
+ .services-mega-links{gap:20px;padding-left:16px;padding-right:16px}
+ .nav-links .service-nav-link{gap:10px}
+ .service-nav-description strong{font-size:13px}
+ .service-nav-description small{font-size:11px}
+ .services-mega-copy{left:20px;right:20px}
+ .services-mega-copy h2{font-size:21px}
+}
+@media(min-width:761px) and (max-width:950px){
+ .services-mega{grid-template-columns:minmax(0,1fr) 240px}
+ .services-mega-links{gap:14px;padding-left:12px;padding-right:12px}
+ .service-nav-symbol{width:34px;height:38px}
+ .services-mega-copy{top:auto;bottom:20px}
+ .services-mega-copy h2{font-size:19px}
+}
+@media(max-width:760px){
+ .nav-links.open{max-height:calc(100dvh - 74px);overflow-y:auto;overscroll-behavior:contain}
+ .nav-services{display:grid;grid-template-columns:minmax(0,1fr) 36px;gap:0;width:100%}
+ .services-menu-toggle{width:36px;height:48px}
+ .services-mega{display:none;position:static;grid-column:1/-1;width:100%;max-width:none;padding:12px;margin:5px 0 12px;grid-template-columns:minmax(0,1fr);gap:12px;transform:none;box-shadow:none}
+ .nav-services.is-open>.services-mega{display:grid;transform:none}
+ .services-mega-links{height:auto;grid-template-columns:minmax(0,1fr);padding:0 12px;gap:0}
+ .nav-links .service-nav-link{min-height:80px;height:auto;padding:14px 0;gap:12px}
+ .services-mega-column:first-child>.service-nav-link:last-child{border-bottom:1px solid #dfe7e7}
+ .service-nav-description strong{font-size:14px}
+ .service-nav-description small{font-size:11px}
+ .services-mega-callout{height:340px}
+ .services-mega-photographs{height:400px}
+ .services-mega-copy{top:auto;bottom:20px;left:20px;right:20px}
+ .services-mega-copy h2{font-size:23px}
+ .nav-links .services-mega-contact{padding:0 6px 0 16px;font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.services-mega,.services-menu-toggle>span,.service-nav-link,.services-mega-contact,.services-mega-contact>span{transition:none}}

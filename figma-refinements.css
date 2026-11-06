@@ -1,0 +1,37 @@
+/* Glass frame only: preserve the established navigation type and layout. */
+#header{background:rgba(255,255,255,.1);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:none}
+/* Treat Services and its close-set chevron as one item in the navigation. */
+@media(min-width:761px){
+ .nav-links{gap:28px}
+ .nav-links>.nav-services{gap:3px;margin-right:0}
+ .nav-links>.nav-services>.services-menu-toggle{width:14px}
+ .nav-links>.nav-services>.services-menu-toggle{flex-shrink:0}
+}
+@media(min-width:761px) and (max-width:1100px){.nav-links{gap:18px}}
+/* Tint the vector itself in the brand pink, without a hover surface or lift. */
+.nav-links .services-menu-toggle{color:#fff;background:transparent;transition:color 220ms ease}
+.nav-links .services-menu-toggle:is(:hover,:focus-visible){color:#a46a96;background:transparent;transform:none}
+.nav-links>.nav-services:is(:hover,:focus-within)>a,.nav-links>.nav-services:is(:hover,:focus-within)>.services-menu-toggle{color:#a46a96}
+.services-menu-toggle>span{position:relative}
+.services-menu-toggle>span>img{opacity:0}
+.services-menu-toggle>span::before{content:"";position:absolute;left:50%;top:50%;width:6.21961px;height:10.5927px;transform:translate(-50%,-50%);background:currentColor;-webkit-mask:url('assets/ca8df.svg') center/contain no-repeat;mask:url('assets/ca8df.svg') center/contain no-repeat}
+/* These photographs are real grid columns, not absolutely positioned artwork. */
+@media(min-width:761px){
+ .service-section.service-side-photo{--screen-gutter:max(9.5139vw,calc((100vw - 1166px)/2))}
+ .service-side-photo .service-detail{display:grid;grid-template-columns:46.6134% minmax(0,1fr);gap:clamp(28px,3.8889vw,56px);align-items:start;min-height:816.28px}
+ .service-side-photo .service-text{width:100%;max-width:none;min-width:0}
+ .service-side-photo .service-artwork{position:relative;inset:auto;margin:0;align-self:end;width:calc(100% + var(--screen-gutter));max-width:none;height:auto;aspect-ratio:auto;container-type:normal}
+ .service-side-photo .service-visual{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:auto}
+ .service-side-photo .service-photo{display:block;width:100%;height:auto;max-width:none;aspect-ratio:auto;object-fit:contain;object-position:right top}
+}
+@media(min-width:761px) and (max-width:1100px){
+ .service-section.service-side-photo{--screen-gutter:40px}
+ .service-side-photo .service-detail{min-height:750px}
+}
+@media(max-width:760px){
+ .service-side-photo .service-artwork{width:calc(100% + 40px);margin-inline:-20px}
+}
+
+/* Shared address icon on every desktop page. */
+@media(min-width:761px){.nav-address{display:inline-flex;align-items:center;gap:7px}}
+.nav-location-icon{display:block;flex:none;width:18px;height:18px}

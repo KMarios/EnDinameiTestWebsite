@@ -1,0 +1,42 @@
+/* A lighter surface and one clear frame, rather than nested rounded boxes. */
+.services-mega{border-radius:6px;background:#fff;box-shadow:0 12px 28px rgba(12,37,43,.12)}
+.services-mega-links{border:0;border-radius:0}
+.services-mega-callout{border-radius:4px}
+.services-mega-photographs{opacity:.9}
+.service-nav-symbol{border-radius:3px;background:rgba(59,128,139,.055)}
+.nav-links .service-nav-link{border-bottom-color:rgba(55,98,111,.12)}
+.service-nav-description strong{font-weight:500}
+@media(min-width:761px){
+ .services-mega{padding:22px;gap:24px}
+ .services-mega-links{padding:16px;column-gap:36px}
+ .nav-links .service-nav-link{height:122px;gap:16px}
+}
+@media(max-width:760px){
+ .nav-links>.nav-services>.services-mega{padding-left:12px;padding-right:12px;border-radius:6px;background:#fff}
+ .nav-links>.nav-services.is-open>.services-mega{padding:8px 12px}
+ .nav-links>.nav-services>.services-mega>.services-mega-mobile-content{gap:12px}
+ .nav-links .services-mega-links{column-gap:20px;border:0;border-radius:0}
+ .nav-links .services-mega-column{display:contents}
+ .nav-links .services-mega-column:nth-child(1)>.service-nav-link{grid-column:1}
+ .nav-links .services-mega-column:nth-child(2)>.service-nav-link{grid-column:2}
+ .nav-links .services-mega-column>.service-nav-link:nth-child(1){grid-row:1}
+ .nav-links .services-mega-column>.service-nav-link:nth-child(2){grid-row:2}
+ .nav-links .services-mega-column>.service-nav-link:nth-child(3){grid-row:3}
+ .nav-links .service-nav-link{min-height:56px;padding:6px 0;gap:10px}
+ .nav-links .service-nav-symbol{border-radius:3px;background:rgba(59,128,139,.055)}
+ .nav-links .service-nav-description{gap:3px}
+ .nav-links .service-nav-description strong{font-weight:500;line-height:1.25}
+ .nav-links .service-nav-description small{margin-top:0;line-height:1.35;color:rgba(29,60,69,.64)}
+ .nav-links .services-mega-callout{height:94px;border-radius:4px}
+ .nav-links .services-mega-copy{left:51%;right:12px}
+ .nav-links .services-mega-copy h2{font-size:13px;font-weight:500;line-height:1.3}
+ .nav-links .services-mega-contact{margin-top:7px;background:rgba(255,255,255,.93)}
+}
+@media(max-width:760px) and (max-height:650px){
+ .nav-links>.nav-services.is-open>.services-mega{padding-top:6px;padding-bottom:6px}
+ .nav-links>.nav-services>.services-mega>.services-mega-mobile-content{gap:8px}
+ .nav-links .services-mega-links{column-gap:14px}
+ .nav-links .service-nav-link{min-height:46px;padding:3px 0;gap:7px}
+ .nav-links .services-mega-callout{height:84px}
+ .nav-links .services-mega-copy h2{font-size:12px}
+}
